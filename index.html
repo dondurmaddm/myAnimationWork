@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodurma</title>
+    <style>
+        body {
+            background-color: #0f142d;
+        }
+        #player {
+            width: 90%;
+            border: grey 0.2rem solid;
+            border-radius: 5%;
+            aspect-ratio: 4 / 3;
+            position: relative;
+            margin-top: 5%;
+            margin-bottom: 1rem;
+            background-color: black;
+            display: -webkit-flex;
+            display: flex;
+			justify-content: center;
+			align-items: center;
+        }
+        #items-back {
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: clamp(18.75rem, 90%, 60rem);
+            background: white;
+            border-radius: 5%;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        #button_back {
+            display: -webkit-flex;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            position: relative;
+            margin: 2rem;
+            margin-top: 30%;
+        }
+
+        .button_name {
+            border: solid #0f142d 0.2rem;
+            height: 2rem;
+            border-radius: 1rem; 
+            color: #0f142d;
+            font-weight: bold;
+            background-color: white;
+            margin-bottom: 0.5rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;;
+        }
+
+        .button_name:focus {
+            color:white;
+            background-color: #0f142d;
+        }
+    </style>
+</head>
+<body>
+    <h1 style = "text-align: center; color: white;">アニメーション作品</h1>
+    <div id = "items-back">
+        <div id = "player">
+
+        </div>
+        <div id = "button-back">
+            <button onclick="media(1)" class="button_name">『怪盗異聞録』</button>
+            <button onclick="media(2)" class="button_name">『オリエント列車ファンタジー事件』</button>
+            <!--button onclick="media(5)" class="button_name">『詐欺に注意』</!--button-->
+            <button onclick="media(3)" class="button_name">『勇気』</button>
+            <button onclick="media(4)" class="button_name">Cat in the yard</button>
+        </div>
+    </div>
+    <script src="./js/media.js"></script>
+</body>
+</html>
