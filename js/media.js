@@ -9,7 +9,7 @@ function media(n) {
     
     // 创建一个新的 video 元素
     const video = document.createElement('video');
-    video.src = `./media/${n}_x264.mp4`; // 设置视频源路径
+    video.src = `./media/${n}_x264_jp.mp4`; // 设置视频源路径
     video.controls = true; // 显示控制条
     video.autoplay = true; // 自动播放
     video.style.width = '100%'; // 设置宽度为100%
